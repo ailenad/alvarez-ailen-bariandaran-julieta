@@ -12,15 +12,15 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('table_users', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
-            $table->unsignedBigInteger('profile_id');
+            $table->unsignedBigInteger('id_profile');
             $table->timestamps();
 
             //Relacion de uno a uno con la tabla profiles
-            $table->foreign('profile_id')->references('id')->on('table_profiles');
+            $table->foreign('id_profile')->references('id')->on('table_profiles');
         });
     }
 
