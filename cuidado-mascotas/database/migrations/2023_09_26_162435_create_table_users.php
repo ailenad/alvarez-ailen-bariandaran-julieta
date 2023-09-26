@@ -13,7 +13,14 @@ return new class extends Migration
     {
         Schema::create('table_users', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->string('password');
+            $table->unsignedBigInteger('profile_id')->nullable();
             $table->timestamps();
+
+            //Relacion de uno a uno con la tabla profiles
+            $table->foreign('profile_id')->references('id')->on('profiles');
         });
     }
 
