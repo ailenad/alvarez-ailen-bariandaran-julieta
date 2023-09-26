@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files psalm-version="dev-master@">
+  <file src="src/Chunk.php">
+    <LessSpecificReturnStatement occurrences="1">
+      <code>$this-&gt;lines</code>
+    </LessSpecificReturnStatement>
+    <MoreSpecificReturnType occurrences="1">
+      <code>list&lt;Line&gt;</code>
+    </MoreSpecificReturnType>
+  </file>
+  <file src="src/Differ.php">
+    <MissingParamType occurrences="1">
+      <code>$line</code>
+    </MissingParamType>
+  </file>
+  <file src="src/Exception/ConfigurationException.php">
+    <MissingParamType occurrences="1">
+      <code>$value</code>
+    </MissingParamType>
+  </file>
+  <file src="src/Output/StrictUnifiedDiffOutputBuilder.php">
+    <InvalidPropertyAssignmentValue occurrences="1">
+      <code>$options['contextLines']</code>
+    </InvalidPropertyAssignmentValue>
+    <MissingParamType occurrences="2">
+      <code>$output</code>
+      <code>$output</code>
+    </MissingParamType>
+    <PropertyNotSetInConstructor occurrences="1">
+      <code>$changed</code>
+    </PropertyNotSetInConstructor>
+  </file>
+  <file src="src/Output/UnifiedDiffOutputBuilder.php">
+    <MissingParamType occurrences="2">
+      <code>$output</code>
+      <code>$output</code>
+    </MissingParamType>
+  </file>
+</files>

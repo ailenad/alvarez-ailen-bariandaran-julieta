@@ -1,0 +1,2160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files psalm-version="4.30.0@d0bc6e25d89f649e4f36a534f330f8bb4643dd69">
+  <file src="library/Mockery.php">
+    <ArgumentTypeCoercion occurrences="2">
+      <code>$expectation</code>
+      <code>$expectation</code>
+    </ArgumentTypeCoercion>
+    <DeprecatedClass occurrences="2">
+      <code>\Mockery\Matcher\MustBe</code>
+      <code>new \Mockery\Matcher\MustBe($expected)</code>
+    </DeprecatedClass>
+    <DeprecatedMethod occurrences="1">
+      <code>\Mockery::builtInTypes()</code>
+    </DeprecatedMethod>
+    <DocblockTypeContradiction occurrences="3">
+      <code>is_null(self::$_config)</code>
+      <code>is_null(self::$_generator)</code>
+      <code>is_null(self::$_loader)</code>
+    </DocblockTypeContradiction>
+    <InvalidArgument occurrences="1">
+      <code>$newMockName</code>
+    </InvalidArgument>
+    <LessSpecificReturnStatement occurrences="1">
+      <code>$mock</code>
+    </LessSpecificReturnStatement>
+    <MissingClosureParamType occurrences="5">
+      <code>$argument</code>
+      <code>$method</code>
+      <code>$n</code>
+      <code>$nesting</code>
+      <code>$object</code>
+    </MissingClosureParamType>
+    <MissingClosureReturnType occurrences="4">
+      <code>function ($argument) use (&amp;$reference) {</code>
+      <code>function ($method) use ($add) {</code>
+      <code>function ($n) use ($mock) {</code>
+      <code>function ($object, $nesting) {</code>
+    </MissingClosureReturnType>
+    <MissingParamType occurrences="5">
+      <code>$fqn</code>
+      <code>$fqn</code>
+      <code>$fqn</code>
+      <code>$reference</code>
+      <code>$type</code>
+    </MissingParamType>
+    <MissingReturnType occurrences="6">
+      <code>declareClass</code>
+      <code>declareInterface</code>
+      <code>declareType</code>
+      <code>registerFileForCleanUp</code>
+      <code>setGenerator</code>
+      <code>setLoader</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="8">
+      <code>$expectations</code>
+      <code>$fileName</code>
+      <code>$formatter($object, $nesting)</code>
+      <code>$fqn</code>
+      <code>$fqn</code>
+      <code>$n</code>
+      <code>$nesting</code>
+      <code>$object</code>
+    </MixedArgument>
+    <MixedArgumentTypeCoercion occurrences="2">
+      <code>$formattedArguments</code>
+      <code>$k</code>
+    </MixedArgumentTypeCoercion>
+    <MixedAssignment occurrences="18">
+      <code>$arg</code>
+      <code>$argument</code>
+      <code>$argument[$key]</code>
+      <code>$cleanedProperties[$name]</code>
+      <code>$expectations</code>
+      <code>$expectations</code>
+      <code>$fileName</code>
+      <code>$formattedArguments[]</code>
+      <code>$formatter</code>
+      <code>$mock</code>
+      <code>$mock</code>
+      <code>$name</code>
+      <code>$reference</code>
+      <code>$shortName</code>
+      <code>$v</code>
+      <code>$value</code>
+      <code>$value</code>
+      <code>$value</code>
+    </MixedAssignment>
+    <MixedFunctionCall occurrences="1">
+      <code>$formatter($object, $nesting)</code>
+    </MixedFunctionCall>
+    <MixedInferredReturnType occurrences="4">
+      <code>\Mockery\MockInterface|\Mockery\LegacyMockInterface</code>
+      <code>\Mockery\MockInterface|\Mockery\LegacyMockInterface</code>
+      <code>\Mockery\MockInterface|\Mockery\LegacyMockInterface</code>
+      <code>\Mockery\MockInterface|\Mockery\LegacyMockInterface</code>
+    </MixedInferredReturnType>
+    <MixedMethodCall occurrences="3">
+      <code>mockery_getExpectationsFor</code>
+      <code>shouldIgnoreMissing</code>
+      <code>shouldReceive</code>
+    </MixedMethodCall>
+    <MixedPropertyFetch occurrences="1">
+      <code>$object-&gt;$name</code>
+    </MixedPropertyFetch>
+    <MixedReturnStatement occurrences="5">
+      <code>$expectations</code>
+      <code>call_user_func_array(array(self::getContainer(), 'mock'), $args)</code>
+      <code>call_user_func_array(array(self::getContainer(), 'mock'), $args)</code>
+      <code>call_user_func_array(array(self::getContainer(), 'mock'), $args)</code>
+      <code>call_user_func_array(array(self::getContainer(), 'mock'), $args)-&gt;shouldIgnoreMissing()</code>
+    </MixedReturnStatement>
+    <MoreSpecificReturnType occurrences="1">
+      <code>\Mockery\Mock</code>
+    </MoreSpecificReturnType>
+    <PossiblyNullPropertyAssignmentValue occurrences="1">
+      <code>null</code>
+    </PossiblyNullPropertyAssignmentValue>
+    <PossiblyUnusedMethod occurrences="25">
+      <code>andAnyOtherArgs</code>
+      <code>andAnyOthers</code>
+      <code>any</code>
+      <code>anyOf</code>
+      <code>capture</code>
+      <code>contains</code>
+      <code>ducktype</code>
+      <code>fetchMock</code>
+      <code>globalHelpers</code>
+      <code>hasKey</code>
+      <code>hasValue</code>
+      <code>instanceMock</code>
+      <code>isBuiltInType</code>
+      <code>mustBe</code>
+      <code>not</code>
+      <code>notAnyOf</code>
+      <code>on</code>
+      <code>parseShouldReturnArgs</code>
+      <code>pattern</code>
+      <code>resetContainer</code>
+      <code>setContainer</code>
+      <code>setGenerator</code>
+      <code>setLoader</code>
+      <code>subset</code>
+      <code>type</code>
+    </PossiblyUnusedMethod>
+    <PossiblyUnusedReturnValue occurrences="1">
+      <code>\Mockery\MockInterface|\Mockery\LegacyMockInterface</code>
+    </PossiblyUnusedReturnValue>
+    <RedundantConditionGivenDocblockType occurrences="1">
+      <code>$parentMock !== null</code>
+    </RedundantConditionGivenDocblockType>
+    <UnnecessaryVarAnnotation occurrences="1">
+      <code>Mockery\Container</code>
+    </UnnecessaryVarAnnotation>
+    <UnresolvableInclude occurrences="1">
+      <code>require $tmpfname</code>
+    </UnresolvableInclude>
+    <UnusedVariable occurrences="2">
+      <code>$parRefMethod</code>
+      <code>$parRefMethodRetType</code>
+    </UnusedVariable>
+  </file>
+  <file src="library/Mockery/Adapter/Phpunit/MockeryPHPUnitIntegration.php">
+    <InternalMethod occurrences="1">
+      <code>addToAssertionCount</code>
+    </InternalMethod>
+    <MissingPropertyType occurrences="1">
+      <code>$mockeryOpen</code>
+    </MissingPropertyType>
+    <MissingReturnType occurrences="6">
+      <code>addMockeryExpectationsToAssertionCount</code>
+      <code>checkMockeryExceptions</code>
+      <code>closeMockery</code>
+      <code>mockeryAssertPostConditions</code>
+      <code>purgeMockeryContainer</code>
+      <code>startMockery</code>
+    </MissingReturnType>
+    <MixedAssignment occurrences="1">
+      <code>$e</code>
+    </MixedAssignment>
+    <MixedMethodCall occurrences="1">
+      <code>dismissed</code>
+    </MixedMethodCall>
+    <PossiblyUnusedMethod occurrences="2">
+      <code>purgeMockeryContainer</code>
+      <code>startMockery</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="library/Mockery/Adapter/Phpunit/MockeryTestCase.php">
+    <MissingReturnType occurrences="2">
+      <code>mockeryTestSetUp</code>
+      <code>mockeryTestTearDown</code>
+    </MissingReturnType>
+  </file>
+  <file src="library/Mockery/Adapter/Phpunit/TestListener.php">
+    <DeprecatedInterface occurrences="1">
+      <code>TestListener</code>
+    </DeprecatedInterface>
+    <DeprecatedTrait occurrences="1">
+      <code>TestListenerDefaultImplementation</code>
+    </DeprecatedTrait>
+    <MissingPropertyType occurrences="1">
+      <code>$trait</code>
+    </MissingPropertyType>
+    <MixedMethodCall occurrences="2">
+      <code>endTest</code>
+      <code>startTestSuite</code>
+    </MixedMethodCall>
+    <UnusedClass occurrences="1">
+      <code>TestListener</code>
+    </UnusedClass>
+  </file>
+  <file src="library/Mockery/Adapter/Phpunit/TestListenerTrait.php">
+    <DeprecatedClass occurrences="3">
+      <code>Blacklist::addDirectory(\dirname((new \ReflectionClass(\Mockery::class))-&gt;getFileName()))</code>
+      <code>Blacklist::class</code>
+      <code>new BlackList()</code>
+    </DeprecatedClass>
+    <InternalClass occurrences="2">
+      <code>BaseTestRunner::STATUS_PASSED</code>
+    </InternalClass>
+    <InternalMethod occurrences="3">
+      <code>addFailure</code>
+      <code>getTestResultObject</code>
+    </InternalMethod>
+    <MissingReturnType occurrences="2">
+      <code>endTest</code>
+      <code>startTestSuite</code>
+    </MissingReturnType>
+    <PossiblyUnusedMethod occurrences="2">
+      <code>endTest</code>
+      <code>startTestSuite</code>
+    </PossiblyUnusedMethod>
+    <RedundantConditionGivenDocblockType occurrences="1">
+      <code>$result !== null</code>
+    </RedundantConditionGivenDocblockType>
+    <UndefinedPropertyAssignment occurrences="1">
+      <code>Blacklist::$blacklistedClassNames</code>
+    </UndefinedPropertyAssignment>
+    <UndefinedPropertyFetch occurrences="1">
+      <code>Blacklist::$blacklistedClassNames</code>
+    </UndefinedPropertyFetch>
+  </file>
+  <file src="library/Mockery/CompositeExpectation.php">
+    <MixedAssignment occurrences="6">
+      <code>$exp</code>
+      <code>$expectation</code>
+      <code>$first</code>
+      <code>$first</code>
+      <code>$first</code>
+      <code>$first</code>
+    </MixedAssignment>
+    <MixedInferredReturnType occurrences="5">
+      <code>\Mockery\Expectation</code>
+      <code>\Mockery\Expectation</code>
+      <code>\Mockery\MockInterface|\Mockery\LegacyMockInterface</code>
+      <code>int</code>
+      <code>self</code>
+    </MixedInferredReturnType>
+    <MixedMethodCall occurrences="4">
+      <code>getMock</code>
+      <code>getMock</code>
+      <code>getMock</code>
+      <code>getOrderNumber</code>
+    </MixedMethodCall>
+    <MixedReturnStatement occurrences="5">
+      <code>$first-&gt;getMock()</code>
+      <code>$first-&gt;getOrderNumber()</code>
+      <code>call_user_func_array([$this, 'andReturn'], $args)</code>
+      <code>call_user_func_array(array($first-&gt;getMock(), 'shouldNotReceive'), $args)</code>
+      <code>call_user_func_array(array($first-&gt;getMock(), 'shouldReceive'), $args)</code>
+    </MixedReturnStatement>
+    <PossiblyUnusedMethod occurrences="3">
+      <code>mock</code>
+      <code>shouldNotReceive</code>
+      <code>shouldReceive</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="library/Mockery/Configuration.php">
+    <MissingParamType occurrences="7">
+      <code>$class</code>
+      <code>$class</code>
+      <code>$class</code>
+      <code>$class</code>
+      <code>$defaultFormatter</code>
+      <code>$formatterCallback</code>
+      <code>$method</code>
+    </MissingParamType>
+    <MissingPropertyType occurrences="2">
+      <code>$_constantsMap</code>
+      <code>$_reflectionCacheEnabled</code>
+    </MissingPropertyType>
+    <MissingReturnType occurrences="14">
+      <code>allowMockingMethodsUnnecessarily</code>
+      <code>allowMockingNonExistentMethods</code>
+      <code>disableReflectionCache</code>
+      <code>enableReflectionCache</code>
+      <code>getConstantsMap</code>
+      <code>getDefaultMatcher</code>
+      <code>getInternalClassMethodParamMaps</code>
+      <code>getObjectFormatter</code>
+      <code>reflectionCacheEnabled</code>
+      <code>resetInternalClassMethodParamMaps</code>
+      <code>setConstantsMap</code>
+      <code>setDefaultMatcher</code>
+      <code>setInternalClassMethodParamMap</code>
+      <code>setObjectFormatter</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="7">
+      <code>$class</code>
+      <code>$class</code>
+      <code>$class</code>
+      <code>$class</code>
+      <code>$method</code>
+      <code>$method</code>
+      <code>\Hamcrest_Matcher::class</code>
+    </MixedArgument>
+    <MixedArrayAccess occurrences="1">
+      <code>$this-&gt;_internalClassParamMap[strtolower($class)][strtolower($method)]</code>
+    </MixedArrayAccess>
+    <MixedArrayAssignment occurrences="1">
+      <code>$this-&gt;_internalClassParamMap[strtolower($class)][strtolower($method)]</code>
+    </MixedArrayAssignment>
+    <MixedArrayOffset occurrences="3">
+      <code>$this-&gt;_defaultMatchers[$type]</code>
+      <code>$this-&gt;_objectFormatters[$class]</code>
+      <code>$this-&gt;_objectFormatters[$type]</code>
+    </MixedArrayOffset>
+    <MixedArrayTypeCoercion occurrences="2">
+      <code>$this-&gt;_defaultMatchers[$type]</code>
+      <code>$this-&gt;_objectFormatters[$type]</code>
+    </MixedArrayTypeCoercion>
+    <MixedAssignment occurrences="6">
+      <code>$classes[]</code>
+      <code>$classes[]</code>
+      <code>$parentClass</code>
+      <code>$parentClass</code>
+      <code>$type</code>
+      <code>$type</code>
+    </MixedAssignment>
+    <MixedInferredReturnType occurrences="1">
+      <code>array|null</code>
+    </MixedInferredReturnType>
+    <MixedReturnStatement occurrences="1">
+      <code>$this-&gt;_internalClassParamMap[strtolower($class)][strtolower($method)]</code>
+    </MixedReturnStatement>
+    <PossiblyUndefinedVariable occurrences="2">
+      <code>$classes</code>
+      <code>$classes</code>
+    </PossiblyUndefinedVariable>
+    <PossiblyUnusedMethod occurrences="12">
+      <code>allowMockingMethodsUnnecessarily</code>
+      <code>allowMockingNonExistentMethods</code>
+      <code>disableReflectionCache</code>
+      <code>enableReflectionCache</code>
+      <code>getInternalClassMethodParamMap</code>
+      <code>mockingMethodsUnnecessarilyAllowed</code>
+      <code>reflectionCacheEnabled</code>
+      <code>resetInternalClassMethodParamMaps</code>
+      <code>setConstantsMap</code>
+      <code>setDefaultMatcher</code>
+      <code>setInternalClassMethodParamMap</code>
+      <code>setObjectFormatter</code>
+    </PossiblyUnusedMethod>
+    <RedundantCastGivenDocblockType occurrences="2">
+      <code>(bool) $flag</code>
+      <code>(bool) $flag</code>
+    </RedundantCastGivenDocblockType>
+    <UndefinedClass occurrences="1">
+      <code>\Hamcrest_Matcher</code>
+    </UndefinedClass>
+  </file>
+  <file src="library/Mockery/Container.php">
+    <ArgumentTypeCoercion occurrences="1">
+      <code>"Mockery\LegacyMockInterface"</code>
+    </ArgumentTypeCoercion>
+    <DocblockTypeContradiction occurrences="3">
+      <code>$arg instanceof MockConfigurationBuilder</code>
+      <code>is_object($arg)</code>
+      <code>is_string($arg)</code>
+    </DocblockTypeContradiction>
+    <InvalidStringClass occurrences="1">
+      <code>new $internalMockName()</code>
+    </InvalidStringClass>
+    <LessSpecificReturnStatement occurrences="1">
+      <code>$mock</code>
+    </LessSpecificReturnStatement>
+    <MissingParamType occurrences="4">
+      <code>$config</code>
+      <code>$constructorArgs</code>
+      <code>$mockName</code>
+      <code>$reference</code>
+    </MissingParamType>
+    <MissingReturnType occurrences="6">
+      <code>_getInstance</code>
+      <code>checkForNamedMockClashes</code>
+      <code>getGenerator</code>
+      <code>getLoader</code>
+      <code>instanceMock</code>
+      <code>mockery_setGroup</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="10">
+      <code>$arg</code>
+      <code>$blocks</code>
+      <code>$constructorArgs</code>
+      <code>$def-&gt;getClassName()</code>
+      <code>$def-&gt;getClassName()</code>
+      <code>$mock</code>
+      <code>$mock-&gt;mockery_thrownExceptions()</code>
+      <code>$mockName</code>
+      <code>\Mockery::getConfiguration()-&gt;getConstantsMap()</code>
+      <code>\Mockery::getConfiguration()-&gt;getInternalClassMethodParamMaps()</code>
+    </MixedArgument>
+    <MixedArgumentTypeCoercion occurrences="1">
+      <code>$keys</code>
+    </MixedArgumentTypeCoercion>
+    <MixedArrayOffset occurrences="4">
+      <code>$this-&gt;_groups[$group]</code>
+      <code>$this-&gt;_mocks[$reference]</code>
+      <code>$this-&gt;_namedMocks[$name]</code>
+      <code>$this-&gt;_namedMocks[$name]</code>
+    </MixedArrayOffset>
+    <MixedAssignment occurrences="12">
+      <code>$blocks</code>
+      <code>$config</code>
+      <code>$count</code>
+      <code>$def</code>
+      <code>$hash</code>
+      <code>$instance</code>
+      <code>$mock</code>
+      <code>$mock</code>
+      <code>$mock</code>
+      <code>$mock</code>
+      <code>$mock</code>
+      <code>$name</code>
+    </MixedAssignment>
+    <MixedInferredReturnType occurrences="3">
+      <code>\Mockery\Mock</code>
+      <code>\Mockery\Mock</code>
+      <code>int</code>
+    </MixedInferredReturnType>
+    <MixedMethodCall occurrences="23">
+      <code>atLeast</code>
+      <code>byDefault</code>
+      <code>generate</code>
+      <code>getClassName</code>
+      <code>getClassName</code>
+      <code>getClassName</code>
+      <code>getClassName</code>
+      <code>getHash</code>
+      <code>getName</code>
+      <code>getTargetObject</code>
+      <code>isInstanceMock</code>
+      <code>load</code>
+      <code>mockery_getExpectationCount</code>
+      <code>mockery_init</code>
+      <code>mockery_teardown</code>
+      <code>mockery_thrownExceptions</code>
+      <code>mockery_verify</code>
+      <code>once</code>
+      <code>setActualOrder</code>
+      <code>setExpectedOrder</code>
+      <code>setMethodName</code>
+      <code>shouldReceive</code>
+      <code>shouldReceive</code>
+    </MixedMethodCall>
+    <MixedOperand occurrences="2">
+      <code>$mock-&gt;mockery_getExpectationCount()</code>
+      <code>$mockName</code>
+    </MixedOperand>
+    <MixedReturnStatement occurrences="3">
+      <code>$count</code>
+      <code>$mocks[$index]</code>
+      <code>$this-&gt;_mocks[$reference]</code>
+    </MixedReturnStatement>
+    <MoreSpecificReturnType occurrences="1">
+      <code>Mock</code>
+    </MoreSpecificReturnType>
+    <PossiblyUnusedMethod occurrences="5">
+      <code>instanceMock</code>
+      <code>mockery_allocateOrder</code>
+      <code>mockery_getCurrentOrder</code>
+      <code>mockery_getGroups</code>
+      <code>mockery_setGroup</code>
+    </PossiblyUnusedMethod>
+    <PossiblyUnusedReturnValue occurrences="2">
+      <code>\Mockery\LegacyMockInterface|\Mockery\MockInterface</code>
+      <code>int</code>
+    </PossiblyUnusedReturnValue>
+    <RedundantCondition occurrences="2">
+      <code>!\Mockery::getConfiguration()-&gt;mockingNonExistentMethodsAllowed() &amp;&amp; (!class_exists($type, true) &amp;&amp; !interface_exists($type, true))</code>
+      <code>count($res) &gt; 0</code>
+    </RedundantCondition>
+    <RedundantConditionGivenDocblockType occurrences="1">
+      <code>is_array($arg)</code>
+    </RedundantConditionGivenDocblockType>
+    <TypeDoesNotContainType occurrences="2">
+      <code>is_callable($finalArg) &amp;&amp; is_object($finalArg)</code>
+      <code>is_object($finalArg)</code>
+    </TypeDoesNotContainType>
+    <UnusedVariable occurrences="1">
+      <code>$class</code>
+    </UnusedVariable>
+  </file>
+  <file src="library/Mockery/CountValidator/AtLeast.php">
+    <InvalidReturnType occurrences="1">
+      <code>bool</code>
+    </InvalidReturnType>
+    <MixedMethodCall occurrences="4">
+      <code>setActualCount</code>
+      <code>setExpectedCount</code>
+      <code>setExpectedCountComparative</code>
+      <code>setMethodName</code>
+    </MixedMethodCall>
+    <UnusedClass occurrences="1">
+      <code>AtLeast</code>
+    </UnusedClass>
+  </file>
+  <file src="library/Mockery/CountValidator/AtMost.php">
+    <InvalidReturnType occurrences="1">
+      <code>bool</code>
+    </InvalidReturnType>
+    <MixedMethodCall occurrences="4">
+      <code>setActualCount</code>
+      <code>setExpectedCount</code>
+      <code>setExpectedCountComparative</code>
+      <code>setMethodName</code>
+    </MixedMethodCall>
+    <UnusedClass occurrences="1">
+      <code>AtMost</code>
+    </UnusedClass>
+  </file>
+  <file src="library/Mockery/CountValidator/CountValidatorAbstract.php">
+    <PossiblyNullPropertyAssignmentValue occurrences="2">
+      <code>null</code>
+      <code>null</code>
+    </PossiblyNullPropertyAssignmentValue>
+    <PossiblyUnusedMethod occurrences="3">
+      <code>__construct</code>
+      <code>isEligible</code>
+      <code>validate</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="library/Mockery/CountValidator/Exact.php">
+    <InvalidReturnType occurrences="1">
+      <code>bool</code>
+    </InvalidReturnType>
+    <MixedAssignment occurrences="1">
+      <code>$because</code>
+    </MixedAssignment>
+    <MixedMethodCall occurrences="4">
+      <code>setActualCount</code>
+      <code>setExpectedCount</code>
+      <code>setExpectedCountComparative</code>
+      <code>setMethodName</code>
+    </MixedMethodCall>
+    <MixedOperand occurrences="1">
+      <code>$this-&gt;_expectation-&gt;getExceptionMessage()</code>
+    </MixedOperand>
+    <UnusedClass occurrences="1">
+      <code>Exact</code>
+    </UnusedClass>
+  </file>
+  <file src="library/Mockery/Exception/BadMethodCallException.php">
+    <MissingPropertyType occurrences="1">
+      <code>$dismissed</code>
+    </MissingPropertyType>
+    <MissingReturnType occurrences="2">
+      <code>dismiss</code>
+      <code>dismissed</code>
+    </MissingReturnType>
+    <PossiblyUnusedMethod occurrences="2">
+      <code>dismiss</code>
+      <code>dismissed</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="library/Mockery/Exception/InvalidArgumentException.php">
+    <UnusedClass occurrences="1">
+      <code>InvalidArgumentException</code>
+    </UnusedClass>
+  </file>
+  <file src="library/Mockery/Exception/InvalidCountException.php">
+    <MissingParamType occurrences="4">
+      <code>$comp</code>
+      <code>$count</code>
+      <code>$count</code>
+      <code>$name</code>
+    </MissingParamType>
+    <MissingPropertyType occurrences="5">
+      <code>$actual</code>
+      <code>$expected</code>
+      <code>$expectedComparative</code>
+      <code>$method</code>
+      <code>$mockObject</code>
+    </MissingPropertyType>
+    <MissingReturnType occurrences="11">
+      <code>getActualCount</code>
+      <code>getExpectedCount</code>
+      <code>getExpectedCountComparative</code>
+      <code>getMethodName</code>
+      <code>getMock</code>
+      <code>getMockName</code>
+      <code>setActualCount</code>
+      <code>setExpectedCount</code>
+      <code>setExpectedCountComparative</code>
+      <code>setMethodName</code>
+      <code>setMock</code>
+    </MissingReturnType>
+    <MixedMethodCall occurrences="1">
+      <code>mockery_getName</code>
+    </MixedMethodCall>
+    <MixedOperand occurrences="1">
+      <code>$comp</code>
+    </MixedOperand>
+    <PossiblyUnusedMethod occurrences="9">
+      <code>getActualCount</code>
+      <code>getExpectedCount</code>
+      <code>getExpectedCountComparative</code>
+      <code>getMethodName</code>
+      <code>getMockName</code>
+      <code>setActualCount</code>
+      <code>setExpectedCount</code>
+      <code>setExpectedCountComparative</code>
+      <code>setMethodName</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="library/Mockery/Exception/InvalidOrderException.php">
+    <MissingParamType occurrences="3">
+      <code>$count</code>
+      <code>$count</code>
+      <code>$name</code>
+    </MissingParamType>
+    <MissingPropertyType occurrences="4">
+      <code>$actual</code>
+      <code>$expected</code>
+      <code>$method</code>
+      <code>$mockObject</code>
+    </MissingPropertyType>
+    <MissingReturnType occurrences="9">
+      <code>getActualOrder</code>
+      <code>getExpectedOrder</code>
+      <code>getMethodName</code>
+      <code>getMock</code>
+      <code>getMockName</code>
+      <code>setActualOrder</code>
+      <code>setExpectedOrder</code>
+      <code>setMethodName</code>
+      <code>setMock</code>
+    </MissingReturnType>
+    <MixedMethodCall occurrences="1">
+      <code>mockery_getName</code>
+    </MixedMethodCall>
+    <PossiblyUnusedMethod occurrences="7">
+      <code>getActualOrder</code>
+      <code>getExpectedOrder</code>
+      <code>getMethodName</code>
+      <code>getMockName</code>
+      <code>setActualOrder</code>
+      <code>setExpectedOrder</code>
+      <code>setMethodName</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="library/Mockery/Exception/NoMatchingExpectationException.php">
+    <MissingParamType occurrences="2">
+      <code>$count</code>
+      <code>$name</code>
+    </MissingParamType>
+    <MissingPropertyType occurrences="3">
+      <code>$actual</code>
+      <code>$method</code>
+      <code>$mockObject</code>
+    </MissingPropertyType>
+    <MissingReturnType occurrences="7">
+      <code>getActualArguments</code>
+      <code>getMethodName</code>
+      <code>getMock</code>
+      <code>getMockName</code>
+      <code>setActualArguments</code>
+      <code>setMethodName</code>
+      <code>setMock</code>
+    </MissingReturnType>
+    <MixedMethodCall occurrences="1">
+      <code>mockery_getName</code>
+    </MixedMethodCall>
+    <PossiblyUnusedMethod occurrences="5">
+      <code>getActualArguments</code>
+      <code>getMethodName</code>
+      <code>getMockName</code>
+      <code>setActualArguments</code>
+      <code>setMethodName</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="library/Mockery/Expectation.php">
+    <DocblockTypeContradiction occurrences="3">
+      <code>!is_int($index)</code>
+      <code>is_int($limit)</code>
+      <code>is_null($group)</code>
+    </DocblockTypeContradiction>
+    <InvalidArgument occurrences="1">
+      <code>$argsOrClosure</code>
+    </InvalidArgument>
+    <InvalidReturnType occurrences="2">
+      <code>mixed</code>
+      <code>self</code>
+    </InvalidReturnType>
+    <InvalidStringClass occurrences="2">
+      <code>new $exception($message, $code, $previous)</code>
+      <code>new $this-&gt;_countValidatorClass($this, $limit)</code>
+    </InvalidStringClass>
+    <MissingClosureParamType occurrences="2">
+      <code>$args</code>
+      <code>$args</code>
+    </MissingClosureParamType>
+    <MissingClosureReturnType occurrences="2">
+      <code>function (...$args) use ($index) {</code>
+      <code>static function () use ($args) {</code>
+    </MissingClosureReturnType>
+    <MissingParamType occurrences="5">
+      <code>$code</code>
+      <code>$exception</code>
+      <code>$expectedArg</code>
+      <code>$message</code>
+      <code>$return</code>
+    </MissingParamType>
+    <MissingReturnType occurrences="7">
+      <code>andReturnFalse</code>
+      <code>andReturnTrue</code>
+      <code>andThrows</code>
+      <code>between</code>
+      <code>getExceptionMessage</code>
+      <code>getName</code>
+      <code>isAndAnyOtherArgumentsMatcher</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="5">
+      <code>$code</code>
+      <code>$exception</code>
+      <code>$message</code>
+      <code>$values</code>
+      <code>$values</code>
+    </MixedArgument>
+    <MixedArgumentTypeCoercion occurrences="1">
+      <code>array_search($lastExpectedArgument, $this-&gt;_expectedArgs, true)</code>
+    </MixedArgumentTypeCoercion>
+    <MixedArrayAccess occurrences="1">
+      <code>$groups[$group]</code>
+    </MixedArrayAccess>
+    <MixedAssignment occurrences="16">
+      <code>$arg</code>
+      <code>$expectedArg</code>
+      <code>$groups</code>
+      <code>$lastExpectedArgument</code>
+      <code>$matcher</code>
+      <code>$newValidators[]</code>
+      <code>$param</code>
+      <code>$result</code>
+      <code>$result</code>
+      <code>$result</code>
+      <code>$return</code>
+      <code>$validator</code>
+      <code>$validator</code>
+      <code>$validator</code>
+      <code>$value</code>
+      <code>$values</code>
+    </MixedAssignment>
+    <MixedClone occurrences="1">
+      <code>clone $validator</code>
+    </MixedClone>
+    <MixedFunctionCall occurrences="2">
+      <code>call_user_func_array(array_shift($this-&gt;_closureQueue), $args)</code>
+      <code>call_user_func_array(current($this-&gt;_closureQueue), $args)</code>
+    </MixedFunctionCall>
+    <MixedInferredReturnType occurrences="4">
+      <code>bool</code>
+      <code>int</code>
+      <code>self</code>
+      <code>self</code>
+    </MixedInferredReturnType>
+    <MixedMethodCall occurrences="7">
+      <code>isEligible</code>
+      <code>mockery_allocateOrder</code>
+      <code>mockery_allocateOrder</code>
+      <code>mockery_getGroups</code>
+      <code>mockery_setGroup</code>
+      <code>new $matcher($expected)</code>
+      <code>validate</code>
+    </MixedMethodCall>
+    <MixedReturnStatement occurrences="3">
+      <code>$result</code>
+      <code>call_user_func_array([$this, 'andReturn'], $args)</code>
+      <code>call_user_func_array(array($this, 'andSet'), func_get_args())</code>
+    </MixedReturnStatement>
+    <PossiblyFalseArgument occurrences="1">
+      <code>array_search($lastExpectedArgument, $this-&gt;_expectedArgs, true)</code>
+    </PossiblyFalseArgument>
+    <PossiblyNullArgument occurrences="2">
+      <code>$group</code>
+      <code>$group</code>
+    </PossiblyNullArgument>
+    <PossiblyNullPropertyAssignmentValue occurrences="4">
+      <code>null</code>
+      <code>null</code>
+      <code>null</code>
+      <code>null</code>
+    </PossiblyNullPropertyAssignmentValue>
+    <PossiblyUnusedMethod occurrences="24">
+      <code>__construct</code>
+      <code>andReturnArg</code>
+      <code>andReturnFalse</code>
+      <code>andReturnNull</code>
+      <code>andReturnSelf</code>
+      <code>andReturnTrue</code>
+      <code>andReturnUndefined</code>
+      <code>andReturnUsing</code>
+      <code>andThrowExceptions</code>
+      <code>andThrows</code>
+      <code>andYield</code>
+      <code>because</code>
+      <code>between</code>
+      <code>byDefault</code>
+      <code>globally</code>
+      <code>isCallCountConstrained</code>
+      <code>isEligible</code>
+      <code>ordered</code>
+      <code>passthru</code>
+      <code>set</code>
+      <code>twice</code>
+      <code>with</code>
+      <code>withSomeOfArgs</code>
+      <code>zeroOrMoreTimes</code>
+    </PossiblyUnusedMethod>
+    <PossiblyUnusedProperty occurrences="1">
+      <code>$_returnValue</code>
+    </PossiblyUnusedProperty>
+    <PossiblyUnusedReturnValue occurrences="3">
+      <code>mixed</code>
+      <code>mixed</code>
+      <code>self</code>
+    </PossiblyUnusedReturnValue>
+    <RedundantCastGivenDocblockType occurrences="1">
+      <code>(array) $this-&gt;_expectedArgs</code>
+    </RedundantCastGivenDocblockType>
+    <RedundantConditionGivenDocblockType occurrences="1">
+      <code>$argsOrClosure instanceof Closure</code>
+    </RedundantConditionGivenDocblockType>
+    <TooManyArguments occurrences="1">
+      <code>mockery_validateOrder</code>
+    </TooManyArguments>
+    <UndefinedClass occurrences="1">
+      <code>\Hamcrest_Matcher</code>
+    </UndefinedClass>
+    <UndefinedInterfaceMethod occurrences="2">
+      <code>mockery_callSubjectMethod</code>
+      <code>mockery_returnValueForMethod</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="library/Mockery/ExpectationDirector.php">
+    <MissingReturnType occurrences="2">
+      <code>addExpectation</code>
+      <code>makeExpectationDefault</code>
+    </MissingReturnType>
+    <MixedAssignment occurrences="9">
+      <code>$exp</code>
+      <code>$exp</code>
+      <code>$exp</code>
+      <code>$exp</code>
+      <code>$expectation</code>
+      <code>$expectation</code>
+      <code>$expectation</code>
+      <code>$expectation</code>
+      <code>$last</code>
+    </MixedAssignment>
+    <MixedMethodCall occurrences="9">
+      <code>isCallCountConstrained</code>
+      <code>isEligible</code>
+      <code>matchArgs</code>
+      <code>matchArgs</code>
+      <code>setActualArguments</code>
+      <code>setMethodName</code>
+      <code>verify</code>
+      <code>verify</code>
+      <code>verifyCall</code>
+    </MixedMethodCall>
+    <PossiblyNullPropertyAssignmentValue occurrences="3">
+      <code>null</code>
+      <code>null</code>
+      <code>null</code>
+    </PossiblyNullPropertyAssignmentValue>
+    <PossiblyUnusedMethod occurrences="5">
+      <code>__construct</code>
+      <code>addExpectation</code>
+      <code>call</code>
+      <code>getExpectationCount</code>
+      <code>verify</code>
+    </PossiblyUnusedMethod>
+    <PossiblyUnusedProperty occurrences="1">
+      <code>$_expectedOrder</code>
+    </PossiblyUnusedProperty>
+    <RawObjectIteration occurrences="1">
+      <code>$expectations</code>
+    </RawObjectIteration>
+  </file>
+  <file src="library/Mockery/ExpectationInterface.php">
+    <PossiblyUnusedMethod occurrences="2">
+      <code>andReturns</code>
+      <code>getOrderNumber</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="library/Mockery/ExpectsHigherOrderMessage.php">
+    <MissingParamType occurrences="2">
+      <code>$args</code>
+      <code>$method</code>
+    </MissingParamType>
+    <PossiblyUnusedMethod occurrences="1">
+      <code>__construct</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="library/Mockery/Generator/CachingGenerator.php">
+    <MissingPropertyType occurrences="1">
+      <code>$cache</code>
+    </MissingPropertyType>
+    <MissingReturnType occurrences="1">
+      <code>generate</code>
+    </MissingReturnType>
+    <MixedArrayAccess occurrences="1">
+      <code>$this-&gt;cache[$hash]</code>
+    </MixedArrayAccess>
+    <MixedArrayAssignment occurrences="1">
+      <code>$this-&gt;cache[$hash]</code>
+    </MixedArrayAssignment>
+    <MixedAssignment occurrences="1">
+      <code>$definition</code>
+    </MixedAssignment>
+  </file>
+  <file src="library/Mockery/Generator/DefinedTargetClass.php">
+    <ArgumentTypeCoercion occurrences="1">
+      <code>$name</code>
+    </ArgumentTypeCoercion>
+    <MissingClosureParamType occurrences="2">
+      <code>$interface</code>
+      <code>$method</code>
+    </MissingClosureParamType>
+    <MissingParamType occurrences="2">
+      <code>$alias</code>
+      <code>$alias</code>
+    </MissingParamType>
+    <MissingPropertyType occurrences="2">
+      <code>$name</code>
+      <code>$rfc</code>
+    </MissingPropertyType>
+    <MixedArgument occurrences="5">
+      <code>$interface</code>
+      <code>$method</code>
+      <code>$this-&gt;rfc-&gt;getAttributes()</code>
+      <code>$this-&gt;rfc-&gt;getInterfaces()</code>
+      <code>$this-&gt;rfc-&gt;getMethods()</code>
+    </MixedArgument>
+    <MixedAssignment occurrences="3">
+      <code>$child</code>
+      <code>$child</code>
+      <code>$parent</code>
+    </MixedAssignment>
+    <MixedInferredReturnType occurrences="7">
+      <code>getName</code>
+      <code>getNamespaceName</code>
+      <code>getShortName</code>
+      <code>implementsInterface</code>
+      <code>inNamespace</code>
+      <code>isAbstract</code>
+      <code>isFinal</code>
+    </MixedInferredReturnType>
+    <MixedMethodCall occurrences="12">
+      <code>getAttributes</code>
+      <code>getInterfaces</code>
+      <code>getMethods</code>
+      <code>getNamespaceName</code>
+      <code>getParentClass</code>
+      <code>getShortName</code>
+      <code>implementsInterface</code>
+      <code>inNamespace</code>
+      <code>isAbstract</code>
+      <code>isFinal</code>
+      <code>isInternal</code>
+      <code>isInternal</code>
+    </MixedMethodCall>
+    <MixedReturnStatement occurrences="7">
+      <code>$this-&gt;name</code>
+      <code>$this-&gt;rfc-&gt;getNamespaceName()</code>
+      <code>$this-&gt;rfc-&gt;getShortName()</code>
+      <code>$this-&gt;rfc-&gt;implementsInterface($interface)</code>
+      <code>$this-&gt;rfc-&gt;inNamespace()</code>
+      <code>$this-&gt;rfc-&gt;isAbstract()</code>
+      <code>$this-&gt;rfc-&gt;isFinal()</code>
+    </MixedReturnStatement>
+    <UndefinedClass occurrences="1">
+      <code>ReflectionAttribute</code>
+    </UndefinedClass>
+  </file>
+  <file src="library/Mockery/Generator/Generator.php">
+    <MissingReturnType occurrences="1">
+      <code>generate</code>
+    </MissingReturnType>
+  </file>
+  <file src="library/Mockery/Generator/Method.php">
+    <MissingParamType occurrences="2">
+      <code>$args</code>
+      <code>$method</code>
+    </MissingParamType>
+  </file>
+  <file src="library/Mockery/Generator/MockConfiguration.php">
+    <MissingClosureParamType occurrences="3">
+      <code>$method</code>
+      <code>$method</code>
+      <code>$method</code>
+    </MissingClosureParamType>
+    <MissingParamType occurrences="10">
+      <code>$className</code>
+      <code>$instanceMock</code>
+      <code>$interfaces</code>
+      <code>$mockOriginalDestructor</code>
+      <code>$name</code>
+      <code>$object</code>
+      <code>$target</code>
+      <code>$targetClassName</code>
+      <code>$targetInterface</code>
+      <code>$targetTraitName</code>
+    </MissingParamType>
+    <MissingPropertyType occurrences="15">
+      <code>$allMethods</code>
+      <code>$blackListedMethods</code>
+      <code>$constantsMap</code>
+      <code>$instanceMock</code>
+      <code>$mockOriginalDestructor</code>
+      <code>$name</code>
+      <code>$parameterOverrides</code>
+      <code>$targetClass</code>
+      <code>$targetClassName</code>
+      <code>$targetInterfaceNames</code>
+      <code>$targetInterfaces</code>
+      <code>$targetObject</code>
+      <code>$targetTraitNames</code>
+      <code>$targetTraits</code>
+      <code>$whiteListedMethods</code>
+    </MissingPropertyType>
+    <MissingReturnType occurrences="26">
+      <code>addTarget</code>
+      <code>addTargetInterfaceName</code>
+      <code>addTargetTraitName</code>
+      <code>addTargets</code>
+      <code>generateName</code>
+      <code>getAllMethods</code>
+      <code>getBlackListedMethods</code>
+      <code>getConstantsMap</code>
+      <code>getMethodsToMock</code>
+      <code>getName</code>
+      <code>getNamespaceName</code>
+      <code>getParameterOverrides</code>
+      <code>getShortName</code>
+      <code>getTargetClass</code>
+      <code>getTargetClassName</code>
+      <code>getTargetInterfaces</code>
+      <code>getTargetObject</code>
+      <code>getTargetTraits</code>
+      <code>getWhiteListedMethods</code>
+      <code>isInstanceMock</code>
+      <code>isMockOriginalDestructor</code>
+      <code>rename</code>
+      <code>requiresCallStaticTypeHintRemoval</code>
+      <code>requiresCallTypeHintRemoval</code>
+      <code>setTargetClassName</code>
+      <code>setTargetObject</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="34">
+      <code>$alias</code>
+      <code>$class-&gt;getMethods()</code>
+      <code>$className</code>
+      <code>$className</code>
+      <code>$method-&gt;getName()</code>
+      <code>$method-&gt;getName()</code>
+      <code>$methods</code>
+      <code>$methods</code>
+      <code>$methods</code>
+      <code>$methods</code>
+      <code>$names</code>
+      <code>$target</code>
+      <code>$target</code>
+      <code>$target</code>
+      <code>$targetInterface</code>
+      <code>$targetInterface</code>
+      <code>$targetTrait</code>
+      <code>$this-&gt;blackListedMethods</code>
+      <code>$this-&gt;constantsMap</code>
+      <code>$this-&gt;getBlackListedMethods()</code>
+      <code>$this-&gt;getBlackListedMethods()</code>
+      <code>$this-&gt;getName()</code>
+      <code>$this-&gt;getName()</code>
+      <code>$this-&gt;getTargetObject()</code>
+      <code>$this-&gt;getWhiteListedMethods()</code>
+      <code>$this-&gt;getWhiteListedMethods()</code>
+      <code>$this-&gt;parameterOverrides</code>
+      <code>$this-&gt;targetClassName</code>
+      <code>$this-&gt;targetClassName</code>
+      <code>$this-&gt;targetInterfaceNames</code>
+      <code>$this-&gt;targetInterfaces</code>
+      <code>$this-&gt;targetTraitNames</code>
+      <code>$this-&gt;targetTraits</code>
+      <code>$this-&gt;whiteListedMethods</code>
+    </MixedArgument>
+    <MixedArgumentTypeCoercion occurrences="4">
+      <code>$interface</code>
+      <code>$interface</code>
+      <code>$interface</code>
+      <code>$interface</code>
+    </MixedArgumentTypeCoercion>
+    <MixedArrayAccess occurrences="6">
+      <code>$methods[$key]</code>
+      <code>$params[1]</code>
+      <code>$params[1]</code>
+      <code>$target[0]</code>
+      <code>$this-&gt;getBlackListedMethods()</code>
+      <code>$this-&gt;getWhiteListedMethods()</code>
+    </MixedArrayAccess>
+    <MixedArrayAssignment occurrences="10">
+      <code>$classes[]</code>
+      <code>$names[]</code>
+      <code>$this-&gt;targetInterfaceNames[]</code>
+      <code>$this-&gt;targetInterfaces[]</code>
+      <code>$this-&gt;targetInterfaces[]</code>
+      <code>$this-&gt;targetInterfaces[]</code>
+      <code>$this-&gt;targetInterfaces[]</code>
+      <code>$this-&gt;targetInterfaces[]</code>
+      <code>$this-&gt;targetTraitNames[]</code>
+      <code>$this-&gt;targetTraits[]</code>
+    </MixedArrayAssignment>
+    <MixedArrayOffset occurrences="1">
+      <code>$methods[$key]</code>
+    </MixedArrayOffset>
+    <MixedAssignment occurrences="21">
+      <code>$alias</code>
+      <code>$class</code>
+      <code>$className</code>
+      <code>$classes</code>
+      <code>$classes[]</code>
+      <code>$interface</code>
+      <code>$key</code>
+      <code>$method</code>
+      <code>$method</code>
+      <code>$method</code>
+      <code>$method</code>
+      <code>$methods</code>
+      <code>$methods[]</code>
+      <code>$names[]</code>
+      <code>$params</code>
+      <code>$params</code>
+      <code>$targetInterface</code>
+      <code>$targetTrait</code>
+      <code>$targets[]</code>
+      <code>$targets[]</code>
+      <code>$trait</code>
+    </MixedAssignment>
+    <MixedMethodCall occurrences="22">
+      <code>addPart</code>
+      <code>build</code>
+      <code>getMethods</code>
+      <code>getMethods</code>
+      <code>getName</code>
+      <code>getName</code>
+      <code>getName</code>
+      <code>getName</code>
+      <code>getName</code>
+      <code>getName</code>
+      <code>getName</code>
+      <code>getName</code>
+      <code>getName</code>
+      <code>getParameters</code>
+      <code>getParameters</code>
+      <code>hasInternalAncestor</code>
+      <code>implementsInterface</code>
+      <code>isAbstract</code>
+      <code>isAbstract</code>
+      <code>isArray</code>
+      <code>isArray</code>
+      <code>isFinal</code>
+    </MixedMethodCall>
+    <MixedOperand occurrences="1">
+      <code>$target</code>
+    </MixedOperand>
+    <PossiblyUnusedMethod occurrences="1">
+      <code>getParameterOverrides</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="library/Mockery/Generator/MockConfigurationBuilder.php">
+    <MissingParamType occurrences="7">
+      <code>$blackListedMethod</code>
+      <code>$instanceMock</code>
+      <code>$mockDestructor</code>
+      <code>$name</code>
+      <code>$target</code>
+      <code>$targets</code>
+      <code>$whiteListedMethod</code>
+    </MissingParamType>
+    <MissingPropertyType occurrences="9">
+      <code>$blackListedMethods</code>
+      <code>$constantsMap</code>
+      <code>$instanceMock</code>
+      <code>$mockOriginalDestructor</code>
+      <code>$name</code>
+      <code>$parameterOverrides</code>
+      <code>$php7SemiReservedKeywords</code>
+      <code>$targets</code>
+      <code>$whiteListedMethods</code>
+    </MissingPropertyType>
+    <MissingReturnType occurrences="14">
+      <code>addBlackListedMethod</code>
+      <code>addBlackListedMethods</code>
+      <code>addTarget</code>
+      <code>addTargets</code>
+      <code>addWhiteListedMethod</code>
+      <code>addWhiteListedMethods</code>
+      <code>getMockConfiguration</code>
+      <code>setBlackListedMethods</code>
+      <code>setConstantsMap</code>
+      <code>setInstanceMock</code>
+      <code>setMockOriginalDestructor</code>
+      <code>setName</code>
+      <code>setParameterOverrides</code>
+      <code>setWhiteListedMethods</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="7">
+      <code>$this-&gt;blackListedMethods</code>
+      <code>$this-&gt;blackListedMethods</code>
+      <code>$this-&gt;constantsMap</code>
+      <code>$this-&gt;parameterOverrides</code>
+      <code>$this-&gt;php7SemiReservedKeywords</code>
+      <code>$this-&gt;targets</code>
+      <code>$this-&gt;whiteListedMethods</code>
+    </MixedArgument>
+    <MixedArrayAssignment occurrences="3">
+      <code>$this-&gt;blackListedMethods[]</code>
+      <code>$this-&gt;targets[]</code>
+      <code>$this-&gt;whiteListedMethods[]</code>
+    </MixedArrayAssignment>
+    <MixedAssignment occurrences="3">
+      <code>$method</code>
+      <code>$method</code>
+      <code>$target</code>
+    </MixedAssignment>
+    <PossiblyUnusedMethod occurrences="3">
+      <code>addWhiteListedMethods</code>
+      <code>setBlackListedMethods</code>
+      <code>setWhiteListedMethods</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="library/Mockery/Generator/MockDefinition.php">
+    <MissingParamType occurrences="1">
+      <code>$code</code>
+    </MissingParamType>
+    <MissingPropertyType occurrences="2">
+      <code>$code</code>
+      <code>$config</code>
+    </MissingPropertyType>
+    <MissingReturnType occurrences="3">
+      <code>getClassName</code>
+      <code>getCode</code>
+      <code>getConfig</code>
+    </MissingReturnType>
+    <MixedMethodCall occurrences="1">
+      <code>getName</code>
+    </MixedMethodCall>
+    <PossiblyUnusedMethod occurrences="1">
+      <code>getConfig</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="library/Mockery/Generator/MockNameBuilder.php">
+    <MissingParamType occurrences="1">
+      <code>$part</code>
+    </MissingParamType>
+    <MissingPropertyType occurrences="2">
+      <code>$mockCounter</code>
+      <code>$parts</code>
+    </MissingPropertyType>
+    <MissingReturnType occurrences="2">
+      <code>addPart</code>
+      <code>build</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="1">
+      <code>$part</code>
+    </MixedArgument>
+    <MixedArgumentTypeCoercion occurrences="1">
+      <code>$parts</code>
+    </MixedArgumentTypeCoercion>
+    <MixedArrayAssignment occurrences="1">
+      <code>$this-&gt;parts[]</code>
+    </MixedArrayAssignment>
+    <MixedAssignment occurrences="2">
+      <code>$part</code>
+      <code>static::$mockCounter</code>
+    </MixedAssignment>
+    <MixedOperand occurrences="1">
+      <code>static::$mockCounter</code>
+    </MixedOperand>
+  </file>
+  <file src="library/Mockery/Generator/Parameter.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>\class_exists($typeHint) ? DefinedTargetClass::factory($typeHint, false) : null</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="1">
+      <code>\ReflectionClass|null</code>
+    </InvalidReturnType>
+    <MissingParamType occurrences="1">
+      <code>$method</code>
+    </MissingParamType>
+    <PossiblyNullArgument occurrences="1">
+      <code>$typeHint</code>
+    </PossiblyNullArgument>
+    <PossiblyUnusedMethod occurrences="3">
+      <code>getClass</code>
+      <code>getTypeHintAsString</code>
+      <code>isArray</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="library/Mockery/Generator/StringManipulation/Pass/AvoidMethodClashPass.php">
+    <MissingClosureParamType occurrences="1">
+      <code>$method</code>
+    </MissingClosureParamType>
+    <MissingClosureReturnType occurrences="1">
+      <code>function ($method) {</code>
+    </MissingClosureReturnType>
+    <MissingParamType occurrences="1">
+      <code>$code</code>
+    </MissingParamType>
+    <MissingReturnType occurrences="1">
+      <code>apply</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="2">
+      <code>$code</code>
+      <code>$config-&gt;getMethodsToMock()</code>
+    </MixedArgument>
+    <MixedMethodCall occurrences="1">
+      <code>getName</code>
+    </MixedMethodCall>
+  </file>
+  <file src="library/Mockery/Generator/StringManipulation/Pass/CallTypeHintPass.php">
+    <MissingParamType occurrences="1">
+      <code>$code</code>
+    </MissingParamType>
+    <MissingReturnType occurrences="1">
+      <code>apply</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="2">
+      <code>$code</code>
+      <code>$code</code>
+    </MixedArgument>
+  </file>
+  <file src="library/Mockery/Generator/StringManipulation/Pass/ClassAttributesPass.php">
+    <MissingParamType occurrences="1">
+      <code>$code</code>
+    </MissingParamType>
+    <MissingReturnType occurrences="1">
+      <code>apply</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="1">
+      <code>$code</code>
+    </MixedArgument>
+    <MixedAssignment occurrences="1">
+      <code>$class</code>
+    </MixedAssignment>
+    <MixedMethodCall occurrences="1">
+      <code>getAttributes</code>
+    </MixedMethodCall>
+  </file>
+  <file src="library/Mockery/Generator/StringManipulation/Pass/ClassNamePass.php">
+    <MissingParamType occurrences="1">
+      <code>$code</code>
+    </MissingParamType>
+    <MissingReturnType occurrences="1">
+      <code>apply</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="2">
+      <code>$code</code>
+      <code>$namespace</code>
+    </MixedArgument>
+    <MixedAssignment occurrences="2">
+      <code>$className</code>
+      <code>$namespace</code>
+    </MixedAssignment>
+    <MixedOperand occurrences="1">
+      <code>$className</code>
+    </MixedOperand>
+  </file>
+  <file src="library/Mockery/Generator/StringManipulation/Pass/ClassPass.php">
+    <MissingParamType occurrences="1">
+      <code>$code</code>
+    </MissingParamType>
+    <MissingReturnType occurrences="1">
+      <code>apply</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="2">
+      <code>$code</code>
+      <code>$target-&gt;getName()</code>
+    </MixedArgument>
+    <MixedAssignment occurrences="1">
+      <code>$target</code>
+    </MixedAssignment>
+    <MixedMethodCall occurrences="2">
+      <code>getName</code>
+      <code>isFinal</code>
+    </MixedMethodCall>
+  </file>
+  <file src="library/Mockery/Generator/StringManipulation/Pass/ConstantsPass.php">
+    <MissingParamType occurrences="1">
+      <code>$code</code>
+    </MissingParamType>
+    <MissingReturnType occurrences="1">
+      <code>apply</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="3">
+      <code>$code</code>
+      <code>$code</code>
+      <code>$constant</code>
+    </MixedArgument>
+    <MixedArrayAccess occurrences="1">
+      <code>$cm[$config-&gt;getName()]</code>
+    </MixedArrayAccess>
+    <MixedArrayOffset occurrences="2">
+      <code>$cm[$config-&gt;getName()]</code>
+      <code>$cm[$config-&gt;getName()]</code>
+    </MixedArrayOffset>
+    <MixedAssignment occurrences="4">
+      <code>$cm</code>
+      <code>$cm</code>
+      <code>$constant</code>
+      <code>$value</code>
+    </MixedAssignment>
+    <PossiblyFalseArgument occurrences="1">
+      <code>$i</code>
+    </PossiblyFalseArgument>
+  </file>
+  <file src="library/Mockery/Generator/StringManipulation/Pass/InstanceMockPass.php">
+    <MissingParamType occurrences="3">
+      <code>$class</code>
+      <code>$code</code>
+      <code>$code</code>
+    </MissingParamType>
+    <MissingReturnType occurrences="2">
+      <code>appendToClass</code>
+      <code>apply</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="2">
+      <code>$class</code>
+      <code>$class</code>
+    </MixedArgument>
+    <MixedAssignment occurrences="1">
+      <code>$code</code>
+    </MixedAssignment>
+    <MixedOperand occurrences="1">
+      <code>$code</code>
+    </MixedOperand>
+    <PossiblyFalseArgument occurrences="1">
+      <code>$lastBrace</code>
+    </PossiblyFalseArgument>
+    <PossiblyUnusedMethod occurrences="1">
+      <code>apply</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="library/Mockery/Generator/StringManipulation/Pass/InterfacePass.php">
+    <MissingParamType occurrences="1">
+      <code>$code</code>
+    </MissingParamType>
+    <MissingReturnType occurrences="1">
+      <code>apply</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="3">
+      <code>$code</code>
+      <code>$i-&gt;getName()</code>
+      <code>$i-&gt;getName()</code>
+    </MixedArgument>
+    <MixedAssignment occurrences="1">
+      <code>$i</code>
+    </MixedAssignment>
+    <MixedMethodCall occurrences="2">
+      <code>getName</code>
+      <code>getName</code>
+    </MixedMethodCall>
+    <MixedOperand occurrences="1">
+      <code>$code</code>
+    </MixedOperand>
+  </file>
+  <file src="library/Mockery/Generator/StringManipulation/Pass/MagicMethodTypeHintsPass.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>$code</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="1">
+      <code>string</code>
+    </InvalidReturnType>
+    <InvalidScalarArgument occurrences="4">
+      <code>$code</code>
+      <code>$code</code>
+      <code>$code</code>
+      <code>$code</code>
+    </InvalidScalarArgument>
+    <MissingReturnType occurrences="1">
+      <code>renderTypeHint</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="6">
+      <code>$config-&gt;getTargetClass()</code>
+      <code>$interface</code>
+      <code>$method</code>
+      <code>$method-&gt;getName()</code>
+      <code>$method-&gt;getName()</code>
+      <code>$method-&gt;getName()</code>
+    </MixedArgument>
+    <MixedAssignment occurrences="3">
+      <code>$interface</code>
+      <code>$method</code>
+      <code>$name</code>
+    </MixedAssignment>
+    <MixedOperand occurrences="3">
+      <code>$method-&gt;getName()</code>
+      <code>$name</code>
+      <code>$this-&gt;renderTypeHint($parameter)</code>
+    </MixedOperand>
+  </file>
+  <file src="library/Mockery/Generator/StringManipulation/Pass/MethodDefinitionPass.php">
+    <MissingParamType occurrences="6">
+      <code>$class</code>
+      <code>$code</code>
+      <code>$code</code>
+      <code>$config</code>
+      <code>$config</code>
+      <code>$method</code>
+    </MissingParamType>
+    <MissingReturnType occurrences="6">
+      <code>appendToClass</code>
+      <code>apply</code>
+      <code>renderMethodBody</code>
+      <code>renderParams</code>
+      <code>renderReturnType</code>
+      <code>renderTypeHint</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="11">
+      <code>$class</code>
+      <code>$class</code>
+      <code>$class-&gt;getName()</code>
+      <code>$class-&gt;getName()</code>
+      <code>$class-&gt;getName()</code>
+      <code>$method</code>
+      <code>$method-&gt;getParameters()</code>
+      <code>$overrides[$class_name][$method-&gt;getName()]</code>
+      <code>$overrides[strtolower($class-&gt;getName())][$method-&gt;getName()]</code>
+      <code>$param</code>
+      <code>$param-&gt;__toString()</code>
+    </MixedArgument>
+    <MixedArrayAccess occurrences="2">
+      <code>$overrides[$class_name]</code>
+      <code>$overrides[strtolower($class-&gt;getName())]</code>
+    </MixedArrayAccess>
+    <MixedArrayOffset occurrences="4">
+      <code>$overrides[$class_name][$method-&gt;getName()]</code>
+      <code>$overrides[$class_name][$method-&gt;getName()]</code>
+      <code>$overrides[strtolower($class-&gt;getName())][$method-&gt;getName()]</code>
+      <code>$overrides[strtolower($class-&gt;getName())][$method-&gt;getName()]</code>
+    </MixedArrayOffset>
+    <MixedAssignment occurrences="10">
+      <code>$class</code>
+      <code>$class</code>
+      <code>$code</code>
+      <code>$defaultValue</code>
+      <code>$method</code>
+      <code>$overrides</code>
+      <code>$overrides</code>
+      <code>$param</code>
+      <code>$param</code>
+      <code>$paramDef</code>
+    </MixedAssignment>
+    <MixedMethodCall occurrences="19">
+      <code>getDeclaringClass</code>
+      <code>getName</code>
+      <code>getName</code>
+      <code>getName</code>
+      <code>getName</code>
+      <code>getName</code>
+      <code>getName</code>
+      <code>getName</code>
+      <code>getParameterOverrides</code>
+      <code>getParameterOverrides</code>
+      <code>getParameters</code>
+      <code>getReturnType</code>
+      <code>isInternal</code>
+      <code>isPassedByReference</code>
+      <code>isProtected</code>
+      <code>isPublic</code>
+      <code>isStatic</code>
+      <code>isStatic</code>
+      <code>returnsReference</code>
+    </MixedMethodCall>
+    <MixedOperand occurrences="6">
+      <code>$code</code>
+      <code>$method-&gt;getName()</code>
+      <code>$paramDef</code>
+      <code>$this-&gt;renderMethodBody($method, $config)</code>
+      <code>$this-&gt;renderParams($method, $config)</code>
+      <code>$this-&gt;renderReturnType($method)</code>
+    </MixedOperand>
+    <PossiblyFalseArgument occurrences="1">
+      <code>$lastBrace</code>
+    </PossiblyFalseArgument>
+    <UndefinedFunction occurrences="1">
+      <code>enum_exists($prefix)</code>
+    </UndefinedFunction>
+  </file>
+  <file src="library/Mockery/Generator/StringManipulation/Pass/Pass.php">
+    <MissingParamType occurrences="1">
+      <code>$code</code>
+    </MissingParamType>
+    <MissingReturnType occurrences="1">
+      <code>apply</code>
+    </MissingReturnType>
+    <PossiblyUnusedMethod occurrences="1">
+      <code>apply</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="library/Mockery/Generator/StringManipulation/Pass/RemoveBuiltinMethodsThatAreFinalPass.php">
+    <MissingParamType occurrences="1">
+      <code>$code</code>
+    </MissingParamType>
+    <MissingPropertyType occurrences="1">
+      <code>$methods</code>
+    </MissingPropertyType>
+    <MissingReturnType occurrences="1">
+      <code>apply</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="2">
+      <code>$code</code>
+      <code>$this-&gt;methods[$method-&gt;getName()]</code>
+    </MixedArgument>
+    <MixedArrayAccess occurrences="1">
+      <code>$this-&gt;methods[$method-&gt;getName()]</code>
+    </MixedArrayAccess>
+    <MixedArrayOffset occurrences="2">
+      <code>$this-&gt;methods[$method-&gt;getName()]</code>
+      <code>$this-&gt;methods[$method-&gt;getName()]</code>
+    </MixedArrayOffset>
+    <MixedAssignment occurrences="2">
+      <code>$method</code>
+      <code>$target</code>
+    </MixedAssignment>
+    <MixedMethodCall occurrences="4">
+      <code>getMethods</code>
+      <code>getName</code>
+      <code>getName</code>
+      <code>isFinal</code>
+    </MixedMethodCall>
+    <PossiblyUnusedMethod occurrences="1">
+      <code>apply</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="library/Mockery/Generator/StringManipulation/Pass/RemoveDestructorPass.php">
+    <MissingParamType occurrences="1">
+      <code>$code</code>
+    </MissingParamType>
+    <MissingReturnType occurrences="1">
+      <code>apply</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="1">
+      <code>$code</code>
+    </MixedArgument>
+    <MixedAssignment occurrences="1">
+      <code>$target</code>
+    </MixedAssignment>
+    <PossiblyUnusedMethod occurrences="1">
+      <code>apply</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="library/Mockery/Generator/StringManipulation/Pass/RemoveUnserializeForInternalSerializableClassesPass.php">
+    <MissingParamType occurrences="3">
+      <code>$class</code>
+      <code>$code</code>
+      <code>$code</code>
+    </MissingParamType>
+    <MissingReturnType occurrences="2">
+      <code>appendToClass</code>
+      <code>apply</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="2">
+      <code>$class</code>
+      <code>$class</code>
+    </MixedArgument>
+    <MixedAssignment occurrences="2">
+      <code>$code</code>
+      <code>$target</code>
+    </MixedAssignment>
+    <MixedMethodCall occurrences="2">
+      <code>hasInternalAncestor</code>
+      <code>implementsInterface</code>
+    </MixedMethodCall>
+    <MixedOperand occurrences="1">
+      <code>$code</code>
+    </MixedOperand>
+    <PossiblyFalseArgument occurrences="1">
+      <code>$lastBrace</code>
+    </PossiblyFalseArgument>
+    <PossiblyUnusedMethod occurrences="1">
+      <code>apply</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="library/Mockery/Generator/StringManipulation/Pass/TraitPass.php">
+    <MissingClosureParamType occurrences="1">
+      <code>$trait</code>
+    </MissingClosureParamType>
+    <MissingParamType occurrences="1">
+      <code>$code</code>
+    </MissingParamType>
+    <MissingReturnType occurrences="1">
+      <code>apply</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="3">
+      <code>$code</code>
+      <code>$trait-&gt;getName()</code>
+      <code>$traits</code>
+    </MixedArgument>
+    <MixedAssignment occurrences="1">
+      <code>$traits</code>
+    </MixedAssignment>
+    <MixedMethodCall occurrences="1">
+      <code>getName</code>
+    </MixedMethodCall>
+  </file>
+  <file src="library/Mockery/Generator/StringManipulationGenerator.php">
+    <MissingReturnType occurrences="2">
+      <code>addPass</code>
+      <code>generate</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="1">
+      <code>$namedConfig</code>
+    </MixedArgument>
+    <MixedAssignment occurrences="4">
+      <code>$className</code>
+      <code>$code</code>
+      <code>$namedConfig</code>
+      <code>$pass</code>
+    </MixedAssignment>
+    <MixedMethodCall occurrences="1">
+      <code>apply</code>
+    </MixedMethodCall>
+    <PossiblyUnusedMethod occurrences="1">
+      <code>addPass</code>
+    </PossiblyUnusedMethod>
+    <UnsafeInstantiation occurrences="1"/>
+  </file>
+  <file src="library/Mockery/Generator/TargetClassInterface.php">
+    <PossiblyUnusedMethod occurrences="6">
+      <code>getAttributes</code>
+      <code>getShortName</code>
+      <code>hasInternalAncestor</code>
+      <code>implementsInterface</code>
+      <code>inNamespace</code>
+      <code>isAbstract</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="library/Mockery/Generator/UndefinedTargetClass.php">
+    <MissingParamType occurrences="1">
+      <code>$name</code>
+    </MissingParamType>
+    <MissingPropertyType occurrences="1">
+      <code>$name</code>
+    </MissingPropertyType>
+    <MixedInferredReturnType occurrences="1">
+      <code>getName</code>
+    </MixedInferredReturnType>
+    <MixedReturnStatement occurrences="1">
+      <code>$this-&gt;name</code>
+    </MixedReturnStatement>
+  </file>
+  <file src="library/Mockery/HigherOrderMessage.php">
+    <MissingParamType occurrences="3">
+      <code>$args</code>
+      <code>$method</code>
+      <code>$method</code>
+    </MissingParamType>
+    <MissingPropertyType occurrences="1">
+      <code>$method</code>
+    </MissingPropertyType>
+    <MixedAssignment occurrences="1">
+      <code>$expectation</code>
+    </MixedAssignment>
+    <MixedInferredReturnType occurrences="1">
+      <code>\Mockery\Expectation</code>
+    </MixedInferredReturnType>
+    <MixedMethodCall occurrences="1">
+      <code>withArgs</code>
+    </MixedMethodCall>
+    <MixedReturnStatement occurrences="2">
+      <code>$expectation-&gt;withArgs($args)</code>
+      <code>$this-&gt;mock-&gt;{$this-&gt;method}($method, $args)</code>
+    </MixedReturnStatement>
+  </file>
+  <file src="library/Mockery/Instantiator.php">
+    <InvalidArgument occurrences="1"/>
+    <MissingClosureReturnType occurrences="1">
+      <code>function () use ($serializedString) {</code>
+    </MissingClosureReturnType>
+    <MissingParamType occurrences="1">
+      <code>$className</code>
+    </MissingParamType>
+    <MissingReturnType occurrences="1">
+      <code>instantiate</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="1">
+      <code>$className</code>
+    </MixedArgument>
+    <MixedAssignment occurrences="1">
+      <code>$instance</code>
+    </MixedAssignment>
+    <UnusedMethod occurrences="1">
+      <code>hasInternalAncestors</code>
+    </UnusedMethod>
+    <UnusedVariable occurrences="1">
+      <code>$error</code>
+    </UnusedVariable>
+  </file>
+  <file src="library/Mockery/LegacyMockInterface.php">
+    <MissingParamType occurrences="3">
+      <code>$method</code>
+      <code>$method</code>
+      <code>$method</code>
+    </MissingParamType>
+    <MissingReturnType occurrences="3">
+      <code>mockery_setCurrentOrder</code>
+      <code>mockery_setGroup</code>
+      <code>shouldAllowMockingMethod</code>
+    </MissingReturnType>
+    <PossiblyInvalidDocblockTag occurrences="4">
+      <code>@var array $args</code>
+      <code>@var string $method</code>
+      <code>@var string $method</code>
+      <code>@var string $method</code>
+    </PossiblyInvalidDocblockTag>
+    <PossiblyUnusedMethod occurrences="23">
+      <code>byDefault</code>
+      <code>makePartial</code>
+      <code>mockery_allocateOrder</code>
+      <code>mockery_findExpectation</code>
+      <code>mockery_getCurrentOrder</code>
+      <code>mockery_getExpectationCount</code>
+      <code>mockery_getGroups</code>
+      <code>mockery_getMockableProperties</code>
+      <code>mockery_init</code>
+      <code>mockery_setCurrentOrder</code>
+      <code>mockery_setExpectationsFor</code>
+      <code>mockery_setGroup</code>
+      <code>mockery_teardown</code>
+      <code>mockery_verify</code>
+      <code>shouldAllowMockingMethod</code>
+      <code>shouldAllowMockingProtectedMethods</code>
+      <code>shouldDeferMissing</code>
+      <code>shouldHaveBeenCalled</code>
+      <code>shouldHaveReceived</code>
+      <code>shouldIgnoreMissing</code>
+      <code>shouldNotHaveBeenCalled</code>
+      <code>shouldNotHaveReceived</code>
+      <code>shouldNotReceive</code>
+    </PossiblyUnusedMethod>
+    <UndefinedDocblockClass occurrences="2">
+      <code>null|array|Closure</code>
+      <code>null|array|Closure</code>
+    </UndefinedDocblockClass>
+  </file>
+  <file src="library/Mockery/Loader/EvalLoader.php">
+    <MissingReturnType occurrences="1">
+      <code>load</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="1">
+      <code>$definition-&gt;getClassName()</code>
+    </MixedArgument>
+    <MixedOperand occurrences="1">
+      <code>$definition-&gt;getCode()</code>
+    </MixedOperand>
+  </file>
+  <file src="library/Mockery/Loader/Loader.php">
+    <MissingReturnType occurrences="1">
+      <code>load</code>
+    </MissingReturnType>
+    <PossiblyUnusedMethod occurrences="1">
+      <code>load</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="library/Mockery/Loader/RequireLoader.php">
+    <MissingParamType occurrences="1">
+      <code>$path</code>
+    </MissingParamType>
+    <MissingPropertyType occurrences="1">
+      <code>$path</code>
+    </MissingPropertyType>
+    <MissingReturnType occurrences="1">
+      <code>load</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="4">
+      <code>$definition-&gt;getClassName()</code>
+      <code>$definition-&gt;getCode()</code>
+      <code>$path</code>
+      <code>$this-&gt;path</code>
+    </MixedArgument>
+    <MixedOperand occurrences="1">
+      <code>$this-&gt;path</code>
+    </MixedOperand>
+    <UnresolvableInclude occurrences="1">
+      <code>require $fileName</code>
+    </UnresolvableInclude>
+    <UnusedClass occurrences="1">
+      <code>RequireLoader</code>
+    </UnusedClass>
+  </file>
+  <file src="library/Mockery/Matcher/AnyOf.php">
+    <MixedArgument occurrences="1">
+      <code>$this-&gt;_expected</code>
+    </MixedArgument>
+  </file>
+  <file src="library/Mockery/Matcher/Closure.php">
+    <MixedAssignment occurrences="2">
+      <code>$closure</code>
+      <code>$result</code>
+    </MixedAssignment>
+    <MixedFunctionCall occurrences="1">
+      <code>$closure($actual)</code>
+    </MixedFunctionCall>
+  </file>
+  <file src="library/Mockery/Matcher/Contains.php">
+    <MixedArgument occurrences="1">
+      <code>$actual</code>
+    </MixedArgument>
+    <MixedAssignment occurrences="3">
+      <code>$exp</code>
+      <code>$v</code>
+      <code>$val</code>
+    </MixedAssignment>
+  </file>
+  <file src="library/Mockery/Matcher/Ducktype.php">
+    <MixedArgument occurrences="2">
+      <code>$method</code>
+      <code>$this-&gt;_expected</code>
+    </MixedArgument>
+    <MixedAssignment occurrences="1">
+      <code>$method</code>
+    </MixedAssignment>
+  </file>
+  <file src="library/Mockery/Matcher/HasKey.php">
+    <MixedArgument occurrences="2">
+      <code>$actual</code>
+      <code>$this-&gt;_expected</code>
+    </MixedArgument>
+  </file>
+  <file src="library/Mockery/Matcher/HasValue.php">
+    <MixedArgument occurrences="1">
+      <code>$actual</code>
+    </MixedArgument>
+  </file>
+  <file src="library/Mockery/Matcher/IsEqual.php">
+    <UnusedClass occurrences="1">
+      <code>IsEqual</code>
+    </UnusedClass>
+  </file>
+  <file src="library/Mockery/Matcher/IsSame.php">
+    <UnusedClass occurrences="1">
+      <code>IsSame</code>
+    </UnusedClass>
+  </file>
+  <file src="library/Mockery/Matcher/MultiArgumentClosure.php">
+    <MixedAssignment occurrences="1">
+      <code>$closure</code>
+    </MixedAssignment>
+    <MixedFunctionCall occurrences="1">
+      <code>call_user_func_array($closure, $actual)</code>
+    </MixedFunctionCall>
+  </file>
+  <file src="library/Mockery/Matcher/NoArgs.php">
+    <MixedArgument occurrences="1">
+      <code>$actual</code>
+    </MixedArgument>
+  </file>
+  <file src="library/Mockery/Matcher/NotAnyOf.php">
+    <MixedAssignment occurrences="1">
+      <code>$exp</code>
+    </MixedAssignment>
+  </file>
+  <file src="library/Mockery/Matcher/Pattern.php">
+    <MixedArgument occurrences="1">
+      <code>$this-&gt;_expected</code>
+    </MixedArgument>
+  </file>
+  <file src="library/Mockery/Matcher/Subset.php">
+    <MissingPropertyType occurrences="1">
+      <code>$strict</code>
+    </MissingPropertyType>
+    <MixedAssignment occurrences="1">
+      <code>$v</code>
+    </MixedAssignment>
+    <PossiblyUnusedMethod occurrences="2">
+      <code>loose</code>
+      <code>strict</code>
+    </PossiblyUnusedMethod>
+    <UnsafeInstantiation occurrences="2">
+      <code>new static($expected, false)</code>
+      <code>new static($expected, true)</code>
+    </UnsafeInstantiation>
+  </file>
+  <file src="library/Mockery/Matcher/Type.php">
+    <MixedArgument occurrences="2">
+      <code>$this-&gt;_expected</code>
+      <code>$this-&gt;_expected</code>
+    </MixedArgument>
+    <MixedInferredReturnType occurrences="1">
+      <code>bool</code>
+    </MixedInferredReturnType>
+    <MixedReturnStatement occurrences="1">
+      <code>$function($actual)</code>
+    </MixedReturnStatement>
+    <TypeDoesNotContainType occurrences="1">
+      <code>function_exists($function)</code>
+    </TypeDoesNotContainType>
+  </file>
+  <file src="library/Mockery/MethodCall.php">
+    <MissingParamType occurrences="2">
+      <code>$args</code>
+      <code>$method</code>
+    </MissingParamType>
+    <MissingPropertyType occurrences="2">
+      <code>$args</code>
+      <code>$method</code>
+    </MissingPropertyType>
+    <MissingReturnType occurrences="2">
+      <code>getArgs</code>
+      <code>getMethod</code>
+    </MissingReturnType>
+    <PossiblyUnusedMethod occurrences="3">
+      <code>__construct</code>
+      <code>getArgs</code>
+      <code>getMethod</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="library/Mockery/MockInterface.php">
+    <PossiblyUnusedMethod occurrences="2">
+      <code>allows</code>
+      <code>expects</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="library/Mockery/ReceivedMethodCalls.php">
+    <MissingPropertyType occurrences="1">
+      <code>$methodCalls</code>
+    </MissingPropertyType>
+    <MissingReturnType occurrences="2">
+      <code>push</code>
+      <code>verify</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="2">
+      <code>$methodCall-&gt;getArgs()</code>
+      <code>$methodCall-&gt;getArgs()</code>
+    </MixedArgument>
+    <MixedArrayAssignment occurrences="1">
+      <code>$this-&gt;methodCalls[]</code>
+    </MixedArrayAssignment>
+    <MixedAssignment occurrences="1">
+      <code>$methodCall</code>
+    </MixedAssignment>
+    <MixedMethodCall occurrences="3">
+      <code>getArgs</code>
+      <code>getArgs</code>
+      <code>getMethod</code>
+    </MixedMethodCall>
+    <PossiblyUnusedMethod occurrences="1">
+      <code>push</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="library/Mockery/Reflector.php">
+    <MixedAssignment occurrences="2">
+      <code>$type</code>
+      <code>$type</code>
+    </MixedAssignment>
+    <MixedInferredReturnType occurrences="2">
+      <code>list&lt;array{typeHint: string, isPrimitive: bool}&gt;</code>
+      <code>string</code>
+    </MixedInferredReturnType>
+    <PossiblyNullArgument occurrences="1">
+      <code>$declaringClass</code>
+    </PossiblyNullArgument>
+    <PossiblyUnusedMethod occurrences="1">
+      <code>getSimplestReturnType</code>
+    </PossiblyUnusedMethod>
+    <UndefinedClass occurrences="2">
+      <code>\ReflectionIntersectionType</code>
+      <code>\ReflectionUnionType</code>
+    </UndefinedClass>
+    <UnusedParam occurrences="1">
+      <code>$declaringClass</code>
+    </UnusedParam>
+  </file>
+  <file src="library/Mockery/Undefined.php">
+    <PossiblyUnusedMethod occurrences="1">
+      <code>__call</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="library/Mockery/VerificationDirector.php">
+    <MissingParamType occurrences="9">
+      <code>$args</code>
+      <code>$args</code>
+      <code>$args</code>
+      <code>$args</code>
+      <code>$limit</code>
+      <code>$maximum</code>
+      <code>$method</code>
+      <code>$method</code>
+      <code>$minimum</code>
+    </MissingParamType>
+    <MissingReturnType occurrences="13">
+      <code>atLeast</code>
+      <code>atMost</code>
+      <code>between</code>
+      <code>cloneApplyAndVerify</code>
+      <code>cloneWithoutCountValidatorsApplyAndVerify</code>
+      <code>once</code>
+      <code>times</code>
+      <code>twice</code>
+      <code>verify</code>
+      <code>with</code>
+      <code>withAnyArgs</code>
+      <code>withArgs</code>
+      <code>withNoArgs</code>
+    </MissingReturnType>
+    <PossiblyUnusedMethod occurrences="10">
+      <code>atLeast</code>
+      <code>atMost</code>
+      <code>between</code>
+      <code>once</code>
+      <code>times</code>
+      <code>twice</code>
+      <code>with</code>
+      <code>withAnyArgs</code>
+      <code>withArgs</code>
+      <code>withNoArgs</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="library/Mockery/VerificationExpectation.php">
+    <MissingReturnType occurrences="1">
+      <code>clearCountValidators</code>
+    </MissingReturnType>
+  </file>
+  <file src="library/helpers.php">
+    <MissingParamType occurrences="3">
+      <code>$args</code>
+      <code>$args</code>
+      <code>$args</code>
+    </MissingParamType>
+    <MissingReturnType occurrences="6">
+      <code>andAnyOtherArgs</code>
+      <code>andAnyOthers</code>
+      <code>anyArgs</code>
+      <code>mock</code>
+      <code>namedMock</code>
+      <code>spy</code>
+    </MissingReturnType>
+  </file>
+</files>
