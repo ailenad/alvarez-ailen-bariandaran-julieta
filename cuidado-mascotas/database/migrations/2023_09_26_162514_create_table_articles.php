@@ -13,7 +13,13 @@ return new class extends Migration
     {
         Schema::create('table_articles', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->text('content');
+            $table->string('image');
+            $table->unsignedBigInteger('user_id'); // Clave foránea
             $table->timestamps();
+
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 

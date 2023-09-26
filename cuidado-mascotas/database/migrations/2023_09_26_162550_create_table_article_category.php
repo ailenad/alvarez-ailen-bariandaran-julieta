@@ -13,7 +13,14 @@ return new class extends Migration
     {
         Schema::create('table_article_category', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('article_id'); // Clave foránea
+            $table->unsignedBigInteger('category_id'); // Clave foránea
             $table->timestamps();
+
+            // Relación muchos a muchos con las tablas 'articles' y 'categories'
+            $table->foreign('article_id')->references('id')->on('articles');
+            $table->foreign('category_id')->references('id')->on('categories');
+
         });
     }
 
