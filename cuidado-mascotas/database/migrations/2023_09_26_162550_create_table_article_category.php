@@ -18,8 +18,8 @@ return new class extends Migration
             $table->timestamps();
 
             // Relación muchos a muchos con las tablas 'articles' y 'categories'
-            $table->foreign('article_id')->references('id')->on('articles');
-            $table->foreign('category_id')->references('id')->on('categories');
+            $table->foreign('article_id')->references('id')->on('table_articles');
+            $table->foreign('category_id')->references('id')->on('table_categories');
 
         });
     }

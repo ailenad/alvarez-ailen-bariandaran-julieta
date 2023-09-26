@@ -19,7 +19,7 @@ return new class extends Migration
             $table->unsignedBigInteger('user_id'); // Clave foránea
             $table->timestamps();
 
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('table_users');
         });
     }
 
